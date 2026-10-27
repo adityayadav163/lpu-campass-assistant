@@ -1,0 +1,309 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f7fb;
+    color: #24344d;
+}
+
+.navbar {
+    background-color: #17283f;
+    color: white;
+    padding: 15px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.navbar h2 {
+    margin: 0;
+    font-size: 21px;
+    white-space: nowrap;
+}
+
+.navbar h2 span {
+    display: block;
+    font-size: 11px;
+    font-weight: normal;
+    margin-top: 5px;
+}
+
+.nav-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 22px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.nav-links a:hover {
+    color: #ffb547;
+}
+
+.hero {
+    min-height: 330px;
+    display: flex;
+    align-items: center;
+    padding: 40px 6%;
+    color: white;
+    background-image:
+        linear-gradient(90deg, rgba(15, 31, 50, 0.88),
+        rgba(15, 31, 50, 0.15)),
+        url("background.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-content {
+    max-width: 480px;
+}
+
+.welcome,
+.tag {
+    color: #ffb547;
+    font-size: 13px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.hero h1 {
+    font-size: 42px;
+    line-height: 1.1;
+    margin: 12px 0;
+}
+
+.hero-content > p:not(.welcome) {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.search-bar {
+    display: flex;
+    max-width: 440px;
+    margin-top: 22px;
+    padding: 5px;
+    background-color: white;
+    border-radius: 30px;
+}
+
+.search-bar input {
+    flex: 1;
+    min-width: 0;
+    border: none;
+    outline: none;
+    padding: 10px 14px;
+    border-radius: 25px;
+}
+
+.search-bar button {
+    border: none;
+    background-color: #f29b38;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.facilities {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 12px;
+    padding: 22px 5%;
+}
+
+.facilities a {
+    background-color: white;
+    color: #24344d;
+    text-decoration: none;
+    text-align: center;
+    padding: 18px 8px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px #dfe5ed;
+    font-size: 13px;
+}
+
+.facilities a:hover,
+.location-card:hover {
+    transform: translateY(-3px);
+}
+
+main {
+    max-width: 1250px;
+    margin: auto;
+    padding: 10px 5% 30px;
+}
+
+.campus-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+    align-items: center;
+    background-color: white;
+    padding: 22px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px #e0e6ee;
+}
+
+.campus-info h2 {
+    margin: 10px 0;
+    font-size: 25px;
+}
+
+.campus-info p {
+    color: #657184;
+    line-height: 1.6;
+    font-size: 14px;
+}
+
+.campus-info ul {
+    padding-left: 20px;
+    line-height: 2;
+    font-size: 14px;
+}
+
+.campus-photo img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 9px;
+    display: block;
+}
+
+.explore-btn {
+    display: inline-block;
+    background-color: #f29b38;
+    color: white;
+    padding: 11px 17px;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 13px;
+}
+
+.locations {
+    margin-top: 35px;
+}
+
+.section-heading {
+    margin-bottom: 18px;
+}
+
+.section-heading h2 {
+    margin-bottom: 5px;
+}
+
+.section-heading p {
+    color: #657184;
+    font-size: 14px;
+}
+
+.location-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+}
+
+.location-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px #e0e6ee;
+    transition: transform 0.2s;
+}
+
+.place-icon {
+    font-size: 25px;
+    margin-bottom: 12px;
+}
+
+.location-card h3 {
+    margin: 5px 0;
+    font-size: 16px;
+}
+
+.location-card p {
+    color: #657184;
+    font-size: 13px;
+}
+
+.help-box {
+    background-color: #e5f2ff;
+    padding: 20px;
+    margin-top: 30px;
+    border-radius: 10px;
+}
+
+.help-box h3 {
+    margin-top: 0;
+}
+
+.help-box p {
+    font-size: 14px;
+    color: #53647a;
+}
+
+footer {
+    background-color: #17283f;
+    color: white;
+    padding: 25px 5%;
+    text-align: center;
+}
+
+footer h2 {
+    margin-bottom: 5px;
+}
+
+footer p {
+    font-size: 13px;
+    color: #d3dce8;
+}
+
+@media (max-width: 850px) {
+    .navbar {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav-links {
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .facilities {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .campus-section {
+        grid-template-columns: 1fr;
+    }
+
+    .location-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 500px) {
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .facilities {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .location-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .campus-photo img {
+        height: 200px;
+    }
+}
+

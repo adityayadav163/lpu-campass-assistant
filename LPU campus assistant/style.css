@@ -1,0 +1,66 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f4f8;
+    text-align: center;
+    padding-top: 60px;
+}
+
+h1 {
+    color: #173b70;
+}
+
+p {
+    color: #555555;
+    font-size: 16px;
+}
+
+form {
+    background-color: white;
+    width: 300px;
+    margin: 25px auto;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px #cccccc;
+}
+
+input {
+    width: 90%;
+    padding: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 6px;
+    background-color: #ffffff;
+}
+
+button {
+    background-color: #173b70;
+    color: white;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+body {
+    background-image: url("LPu1.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 50vh;
+}
+
+.login-btn {
+    display: inline-block;
+    background-color: #173b70;
+    color: white;
+    padding: 10px 30px;
+    text-decoration: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+form{
+    background-color:#173b70;
+}
+#1o1{
+    background: color #f08b49;
+}
